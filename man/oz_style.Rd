@@ -16,7 +16,7 @@ Add OZ theme to ggplot chart
 # a basic histogram
 data.frame(x = rnorm(1000)) \%>\%
 ggplot(aes(x = x)) +
- geom_histogram() +
+ geom_histogram(fill = "#FDB813",color = "black") +
  xlab("Sample") +
  ylab("Count") +
  ggtitle("GGplot Theme",subtitle = "Testing a ggplot theme for OZminerals") +

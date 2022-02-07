@@ -1,7 +1,5 @@
 #' Add OZ theme to ggplot chart
 #'
-#' @importFrom extrafont loadfonts
-#'
 #' @return
 #' @export
 #'
