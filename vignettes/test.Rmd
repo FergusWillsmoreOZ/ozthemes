@@ -1,0 +1,22 @@
+---
+title: "test"
+output: rmarkdown::html_vignette
+
+logoposition: right
+logo: OZ-Minerals-Logo-Black.png
+vignette: >
+  %\VignetteIndexEntry{test}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(ozthemes)
+```

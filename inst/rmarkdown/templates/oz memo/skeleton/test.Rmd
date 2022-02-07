@@ -1,0 +1,35 @@
+---
+output: 
+  pdf_document:
+    citation_package: natbib
+    keep_tex: false
+    latex_engine: pdflatex
+    template: svm-latex-memo.tex
+fontfamily: mathpazo
+fontsize: 11pt
+geometry: margin=1in
+header-includes:
+   - \linespread{1.05}
+
+from: "Your Name"
+to: "Their Name"
+subject: "Subject goes here"
+date: "`r format(as.Date('2012-08-13'), '%d %B, %Y')`"
+graphics: true
+width: .3
+logoposition: right
+logo: OZ-Minerals-Logo-Black.png
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Adding an RMarkdown Template
+
+This file is what a user will see when they select your template. Make sure that you update the fields in the yaml header. In particular you will want to update the `output` field to whatever format your template requires.
+
+This is a good place to demonstrate special features that your template provides. Ideally it should knit out-of-the-box, or at least contain clear instructions as to what needs changing.
+
+Finally, be sure to remove this message!
+
