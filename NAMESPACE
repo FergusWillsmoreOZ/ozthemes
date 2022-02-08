@@ -3,4 +3,5 @@
 export("%>%")
 export(finalise_plot)
 export(oz_style)
+importFrom(ggpubr,ggarrange)
 importFrom(magrittr,"%>%")

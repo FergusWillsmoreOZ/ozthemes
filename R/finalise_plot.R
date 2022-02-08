@@ -23,10 +23,13 @@ create_footer <- function (source_name, logo_image_path) {
 
 }
 
-#' Arrange alignment and save BBC ggplot chart
+#' Arrange alignment and save OZ ggplot chart
 #'
-#' Running this function will save your plot with the correct guidelines for publication for a BBC News graphic.
-#' It will left align your title, subtitle and source, add the BBC blocks at the bottom right and save it to your specified location.
+#' Running this function will save your plot with the correct guidelines for publication.
+#' It will left align your title, subtitle and source, add the OZ logo at the bottom right and save it to your specified location.
+#'
+#' @importFrom ggpubr ggarrange
+#'
 #' @param plot_name The variable name of the plot you have created that you want to format and save
 #' @param source_name The text you want to come after the text 'Source:' in the bottom left hand side of your side
 #' @param save_filepath Exact filepath that you want the plot to be saved to
@@ -35,7 +38,6 @@ create_footer <- function (source_name, logo_image_path) {
 #' @param logo_image_path File path for the logo image you want to use in the right hand side of your chart,
 #'  which needs to be a PNG file - defaults to BBC blocks image that sits within the data folder of your package
 #' @return (Invisibly) an updated ggplot object.
-
 #' @keywords finalise_plot
 #' @examples
 #' finalise_plot(plot_name = myplot,

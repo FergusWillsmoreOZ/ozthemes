@@ -2,7 +2,7 @@
 % Please edit documentation in R/finalise_plot.R
 \name{finalise_plot}
 \alias{finalise_plot}
-\title{Arrange alignment and save BBC ggplot chart}
+\title{Arrange alignment and save OZ ggplot chart}
 \usage{
 finalise_plot(
   plot_name,
@@ -31,8 +31,8 @@ which needs to be a PNG file - defaults to BBC blocks image that sits within the
 (Invisibly) an updated ggplot object.
 }
 \description{
-Running this function will save your plot with the correct guidelines for publication for a BBC News graphic.
-It will left align your title, subtitle and source, add the BBC blocks at the bottom right and save it to your specified location.
+Running this function will save your plot with the correct guidelines for publication.
+It will left align your title, subtitle and source, add the OZ logo at the bottom right and save it to your specified location.
 }
 \examples{
 finalise_plot(plot_name = myplot,
